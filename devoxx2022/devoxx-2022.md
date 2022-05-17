@@ -20,7 +20,8 @@ some broader things written from my own perspective:
 * JIT vs AOT compilation: GraalVM Native and CRaC -- this was the most interesting stuff for me
 
 ¹ OK so the fistbump did not accord with the red personal-space sticker, 
-but I told him my story about the time a Product Owner asked about specific NSWWS dissemination business rules 
+but I told him my story about the time a Product Owner asked 
+about specific NSWWS dissemination business rules 
 some years after the system was written
 and I was able to answer her question by showing her the Cucumber specs 
 instead of using possibly-decayed documentation,

@@ -40,7 +40,7 @@ Plus it would be more comfortable if our infrastructure-as-code code
 was not so closely tailored to the platform on which it is deployed -- 
 that doesn't feel like the best separation of concerns.
 The business logic is all jumbled up with platform specifics.
-Platform details ought to be a wrapper on top of business logic.
+Platform details ought to be abstracted away from business logic.
 
 ## Talks
 ## [Knative and Spring -- Bringing Back the func](https://www.devoxx.co.uk/talk/?id=5267)
@@ -64,8 +64,8 @@ but I think it's a bit heavyweight for a little lambda.)
 * Spring Native is going to bring graalvm native to Spring (this will be nice if they can get it up to the required reliability)
 * Spring Cloud Function allows the composition of functions within a codebase as one unit of deployment
   * but it seems to require horrible yml to chain things together -- why not just write a Java class?
-  * apparently it does "transparent type conversion" -- this is probably excellent but they didn't explain what it means
-  * the example they made was a bit Enterprise Fizz Buzz -- admittedly it was a short demo and it's hard to come up with something for those
+  * apparently it does "transparent type conversion" -- this is probably excellent but they didn't explain what it means so it made me anxious
+  * the example they made was a bit Enterprise Fizz Buzz -- admittedly it was a short demo and it's hard to come up with something for those that both demonstrates capabilities and makes it look like the capabilities are worth the trouble
 
 ### Their summary of Knative eventing
 * event routing and triggers
@@ -89,7 +89,7 @@ He said to look at [https://serverlessworkflow.github.io/](https://serverlesswor
 This was a good talk explaining how Knative serving works on top of Kubernetes.
 I think it's essentially online here [https://tanzu.vmware.com/developer/tv/enlightning/6/](https://tanzu.vmware.com/developer/tv/enlightning/6/)
 
-She made the point that the key benefits of Knative serving are:
+She said that the key benefits of Knative serving are:
 * less yml
 * auto TLS
 * concurrency based on number of requests
