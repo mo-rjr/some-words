@@ -1,6 +1,8 @@
 # Microsoft ❤ Java
 A very short lunchtime talk by Martijn Verburg, formerly CEO of JClarity, which ran AdoptOpenJDK
 
+[Video available here](https://www.youtube.com/watch?v=y2_qiSNv8jA)
+
 ## Microsoft has a ton of internal Java
 * more than 2 million plus JVMs internally (not counting ones that are run by others on its Azure platform)
 * Yammer is in Java
@@ -12,7 +14,7 @@ A very short lunchtime talk by Martijn Verburg, formerly CEO of JClarity, which 
 
 ## Bringing Java into Microsoft
 * Martijn Verburg joined Microsoft a few years ago when JClarity was bought by Microsoft, in order to bring Java in
-* when he joined he was given a lawyer and told him only objective for his first year was for Microsoft not to get sued
+* when he joined he was given a lawyer and told him only objective for his first year was for Microsoft not to get sued (_cf._ J++...)
 * they handed all Microsoft's Java patents over to the [JCP](https://www.jcp.org/en/home/index)
 * they gave AdoptOpenJDK to Eclipse to become [Eclipse Adoptium](https://adoptium.net/)
 * they've contributed to lots of Java work including getting stuff to work on the MacOS m1 architecture

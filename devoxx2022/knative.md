@@ -14,7 +14,7 @@ If you consider an old-school monolith, like Prodgen on Ripple, then each lambda
 By separating those modules out into separate lambdas we have really enforced the separations between them.
 (Good programmers keep those separations in a monolith anyway but there's not the same enforcement.)
 
-But obviously what we've lost when we do that is those links between the modules/lambdas.
+But obviously what we've lost when we do that is precisely those links between the modules/lambdas.
 This a problem.
 When you're trying to troubleshoot a system, you need to be able to see the flow through it.
 In a monolith you can use an IDE to track down where something is called from,
@@ -23,7 +23,7 @@ But in a distributed system it can be a massive hassle to work out where somethi
 or how it got to the place where it failed.
 You're probably going to have to rely on your memory about how things connect up, 
 or on diagrams in docs which might now be out of date.
-Correlation ids can help but you'd better have good tooling to find those ids in different logs.
+Correlation ids can help, but you'd better have good tooling to find those ids in different logs.
 Splitting up monoliths shunts the complexity of how things are connected into configuration code 
 which is almost certainly in a different language and possibly a different repo.
 
@@ -35,7 +35,7 @@ are passed between entirely distinct bits of code which are allowed to mutate st
 
 But we write tons and tons of config in AWS-bespoke yml.
 All AWS things are better when they use Open-Source standards,
-so even if we never take anything off AWS it would still be better to use OS tooling.
+so even if we never take anything off AWS it would still be better to use OS definitions.
 Plus it would be more comfortable if our infrastructure-as-code code 
 was not so closely tailored to the platform on which it is deployed -- 
 that doesn't feel like the best separation of concerns.
@@ -45,6 +45,8 @@ Platform details ought to be abstracted away from business logic.
 ## Talks
 ## [Knative and Spring -- Bringing Back the func](https://www.devoxx.co.uk/talk/?id=5267)
 
+[Video available here](https://www.youtube.com/watch?v=EKDYE_dStTI)
+
 A talk about using Knative with the Spring framework.
 (Since we swapped to doing serverless with Java we've not used the Spring framework,
 and I have found this refreshing.
@@ -53,7 +55,7 @@ but I think it's a bit heavyweight for a little lambda.)
 
 ### Their summary of Knative serving
 * dev-friendly abstractions
-* from code to "url" -- I wanted to query what they meant by this -- are they assuming all services are REST APIs?
+* from code to "url" -- _I wanted to query what they meant by this_ -- _are they assuming all services are REST APIs?_
 * autoscaling, scaling to zero -- scaling from zero to one is hard
 * progressive rollouts
 * things can be request-driven or event-driven
@@ -75,7 +77,7 @@ but I think it's a bit heavyweight for a little lambda.)
 * polyglot support with CloudEvents
 * pluggable
 * cloud agnostic
-#### their pros and cons
+#### Their pros and cons
 * event-based allows systems to be more reactive
 * the message broker is abstracted
 * CloudEvents has a standard structure
@@ -86,8 +88,11 @@ but I think it's a bit heavyweight for a little lambda.)
 He said to look at [https://serverlessworkflow.github.io/](https://serverlessworkflow.github.io/).
 
 ## Live-diagramming Knative
+[Video available here](https://www.youtube.com/watch?v=a3rIuPatyvs)
+
+She has some live-diagramming videos online too: [https://tanzu.vmware.com/developer/tv/enlightning/6/](https://tanzu.vmware.com/developer/tv/enlightning/6/)
+
 This was a good talk explaining how Knative serving works on top of Kubernetes.
-I think it's essentially online here [https://tanzu.vmware.com/developer/tv/enlightning/6/](https://tanzu.vmware.com/developer/tv/enlightning/6/)
 
 She said that the key benefits of Knative serving are:
 * less yml

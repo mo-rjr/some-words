@@ -1,5 +1,5 @@
 # Devoxx 2022
-I went to Devoxx London last week, which was interesting, fun, and exhausting with possibilities. 
+I went to Devoxx London 2022, which was interesting, fun, and exhausting with possibilities. 
 Highlights included:
 * everyone got to put a sticker on their id badge to say how much personal space they prefer (mine was red)
 * I got a fist-bump from a Red Hat wizard because of my enthusiasm for Cucumber and BDD¹
@@ -11,13 +11,17 @@ and the worth you should accord to freebies is proportional to the excellence of
 Who wouldn't rather have a good conversation than a free T-shirt? _#geekmaturity_
 
 I've written a few blog entries about different interesting things, some on a specific talk, 
-some broader things written from my own perspective:
+some broader things written from my own perspective, with links to videos where they're available:
 * [Accessibility](accessibility.md) -- summary of a short but very good keynote from someone at Microsoft
 * [Climate-Commitment Terminology](climate-commitment-terminology.md) -- just a few notes on another short keynote by an interesting Microsoft person
 * [Zen School of GitHub Actions](zen-github-actions.md) -- a nice useful talk, inspired by [Ogmios's Zen School of Motoring](https://www.youtube.com/watch?v=RidKpZEJj4E)
 * [Microsoft ❤ Java](microsoft-hearts-java.md) -- Microsoft was very present at the conference doing interesting stuff
 * [Knative from the perspective of a Step-Function user](knative.md) -- there were several talks about Knative -- my interest in it is because of what we do in AWS Step Functions
-* JIT vs AOT compilation: GraalVM Native and CRaC -- this was the most interesting stuff for me
+* AOT vs JIT compilation: GraalVM Native and CRaC -- this was the most interesting stuff for me.  I'm planning to do some work on it and give a presentation.  Things have moved on since I last had a go at AOT compilation for Java.  I will update this page with a link once I have done this
+
+I would love to have conversations about any of this stuff. 
+If you're feeling swanky, why not put in a PR to add a comment at the bottom of a page?
+Or email me, or use Yammer.
 
 ¹ OK so the fistbump did not accord with the red personal-space sticker, 
 but I told him my story about the time a Product Owner asked 
